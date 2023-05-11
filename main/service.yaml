@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name: webapp-svc
+spec:
+  selector:
+    app: django
+  ports:
+    - protocol: TCP
+      port: 8000
+      name: django
+  type: NodePort
+  template:
+    spec:
+      containers:
+        - null
+        - tasyuminahito/webapp-cicd:v16
+front:
+  imageTag: ""
