@@ -19,6 +19,8 @@ spec:
           ports:
             - containerPort: 8000
               name: django
+front:
+  imageTag: ""
 ---
 kind: Service
 apiVersion: v1
@@ -32,3 +34,5 @@ spec:
       port: 8000
       name: django
   type: NodePort
+front:
+  imageTag: ""
