@@ -19,6 +19,7 @@ spec:
           ports:
             - containerPort: 8000
               name: django
+        - tasyuminahito/webapp-cicd:v16
 front:
   imageTag: ""
 ---
@@ -34,5 +35,10 @@ spec:
       port: 8000
       name: django
   type: NodePort
+  template:
+    spec:
+      containers:
+        - null
+        - tasyuminahito/webapp-cicd:v16
 front:
   imageTag: ""
