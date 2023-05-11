@@ -1,7 +1,7 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-  name: django
+  name: webapp-deployment10
 spec:
   replicas: 1
   selector:
@@ -25,7 +25,7 @@ front:
 kind: Service
 apiVersion: v1
 metadata:
-  name: django-svc
+  name: webapp-deployment10
 spec:
   selector:
     app: django
