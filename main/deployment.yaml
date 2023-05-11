@@ -20,4 +20,4 @@ spec:
             - containerPort: 8000
               name: django
 front:
-  imageTag: ""
+  imageTag: "tasyuminahito/webapp-cicd:main"
