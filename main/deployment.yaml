@@ -21,23 +21,3 @@ spec:
               name: django
 front:
   imageTag: ""
----
-kind: Service
-apiVersion: v1
-metadata:
-  name: webapp-deployment19
-spec:
-  selector:
-    app: django
-  ports:
-    - protocol: TCP
-      port: 8000
-      name: django
-  type: NodePort
-  template:
-    spec:
-      containers:
-        - null
-        - tasyuminahito/webapp-cicd:v16
-front:
-  imageTag: ""
