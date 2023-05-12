@@ -9,4 +9,4 @@ spec:
     - protocol: TCP
       port: 8000
       name: django
-  type: LoadBalancer
+  type: NodePort
