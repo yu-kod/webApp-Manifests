@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: django
-          image: "tasyuminahito/webapp-cicd:0.0.4"
+          image: "tasyuminahito/webapp-cicd:0.0.5"
           imagePullPolicy: Always
           ports:
             - containerPort: 8000
